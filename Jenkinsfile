@@ -1,5 +1,6 @@
 node {
-  properties([
+  properties ([
+    parameters ([
     string(name: 'BRANCH', defaultValue: '', description: 'DownStream Branch'),
     ])
   ])
