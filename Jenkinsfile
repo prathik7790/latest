@@ -10,7 +10,7 @@ node {
   stage('Trigger Demo Job') {
     //echo "Triggering job for branch ${env.BRANCH_NAME}"
    // BRANCH_TO_TAG = env.BRANCH_NAME
-    build 'demogithub/dev'
+    build job: 'demogithub/${BRANCH}'
       //parameters: [string(name: 'BRANCH', value: env.BRANCH_NAME)]
   }
 }
