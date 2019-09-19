@@ -4,7 +4,7 @@ node {
   }
   stage('Trigger Demo Job') {
     build (
-      job: '../../demogithub'
+      job: 'demogithub'
     )
   }
 }
