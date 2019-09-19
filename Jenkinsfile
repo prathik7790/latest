@@ -11,7 +11,7 @@ node {
     //echo "Triggering job for branch ${env.BRANCH_NAME}"
    // BRANCH_TO_TAG = env.BRANCH_NAME
     build (
-      job: "demogithub/${BRANCH}"
+      job: "../demogithub/${BRANCH}"
       //parameters: [string(name: 'BRANCH', value: env.BRANCH_NAME)]
     )
   }
